@@ -1,0 +1,38 @@
+{
+  "name": "genpark-inline-cursor-context-intelligence-rewriter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Inline cursor context intelligence, instant text rewriter & screen contextual assistant.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "inline-intelligence",
+    "cursor-assistant",
+    "text-rewriter",
+    "context-aware",
+    "ph-august15"
+  ],
+  "inputs": {
+    "highlighted_text": {
+      "type": "string"
+    },
+    "target_tone": {
+      "type": "string"
+    },
+    "context_window": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "rewritten_text": {
+      "type": "string"
+    },
+    "clarity_delta_pct": {
+      "type": "number"
+    },
+    "processing_latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
